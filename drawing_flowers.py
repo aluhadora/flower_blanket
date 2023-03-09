@@ -1,7 +1,6 @@
 #Python Turtle - Spirograph - www.101computing.net/python-turtle-spirograph/
 import turtle
 from math import cos,sin,pi
-from time import sleep
 
 def init():
     window = turtle.Screen()
@@ -78,13 +77,9 @@ def draw_center(offset_x, offset_y, color):
 
     myPen.end_fill()
     myPen.penup()
-    # myPen.getscreen().update()
 
 def draw_flower(x, y, petal_color, center_color, offset_angle):
     draw_petals(x, y, petal_color, 4, offset_angle)
-    # draw_petals(x, y, petal_color, 3, offset_angle)
-    # draw_petals(x, y, petal_color, 2, offset_angle)
-    # draw_petals(x, y, petal_color, 1, offset_angle)
     draw_center(x, y, center_color)
     turtle.Screen().update()
 
